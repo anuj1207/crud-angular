@@ -3,9 +3,5 @@ import {Task} from "./task";
 
 @Injectable()
 export class AppService{
-  task:Task[] = [{
-    date : null,
-    description : '',
-    title : '',
-    priority : ''}];
+  tasks:Task[] = [];
 }

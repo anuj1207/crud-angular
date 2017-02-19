@@ -4,10 +4,11 @@ export class Task {
   description:string;
   priority:string;
   date:Date;
-  constructor(){
-    this.date = null;
-    this.description = '';
-    this.title = '';
-    this.priority = '';
+  constructor(newDate?: Date, newTitle?: string, newDescription?: string, newPriority?: string){
+    this.date = newDate;
+    this.description = newDescription;
+    this.priority = newPriority;
+    this.title = newTitle;
   }
+
 }

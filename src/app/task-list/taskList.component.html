@@ -1,0 +1,12 @@
+<ul>
+  <li *ngFor="let task of tasks;let i = index">
+
+    Date: {{task.date}}
+    Title: {{task.title}}
+    Description: {{task.description}}
+    Priority: {{task.priority}}
+
+    <button (click)="redirect(i)">Modify</button>
+    <button (click)="deleteTask(i)">Done</button>
+  </li>
+</ul>
